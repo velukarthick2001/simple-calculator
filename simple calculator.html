@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>
+simple calculator
+</title>
+<style>
+#frame{
+width:300px;
+height:470px;
+border:3px solid black;
+background-color:grey;
+margin:30px;
+padding:30px;
+border-radius:15px;
+
+}
+#clear{
+width:280px;
+height:50px;
+}
+#inputField{
+width:280px;
+height:50px;
+border:3px solid black;
+padding:20px;
+margin-top:15px;
+border-radius:5px;
+}
+input{
+width:45px;
+height:65px;
+margin:05px;
+margin-left:10px;
+padding: 25px;
+border:3px solid black;
+border-radius:5px;
+
+}
+</style>
+</head>
+<body>
+<form  name = "calculator">
+<div id = "frame">
+<h1  style="font-size:20px;">SIMPLE CALCULATOR</h1>
+<div>
+<input type="text" name = "textField" id = "inputField">
+</div>
+<div>
+<input type = "button" value = "1 " onclick = "calculator.textField.value += '1'">
+<input type = "button" value = "2 " onclick = "calculator.textField.value += '2'">
+<input type = "button" value = "3 " onclick = "calculator.textField.value += '3'">
+<input type = "button" value = "+ " onclick = "calculator.textField.value += '+'">
+</div>
+<div>
+<input type = "button" value = "4 " onclick = "calculator.textField.value += '4'">
+<input type = "button" value = "5 " onclick = "calculator.textField.value += '5'">
+<input type = "button" value = "6 " onclick = "calculator.textField.value += '6'">
+<input type = "button" value = "- " onclick = "calculator.textField.value += '-'">
+</div>
+<div>
+<input type = "button" value = "7 " onclick = "calculator.textField.value += '7'">
+<input type = "button" value = "8 " onclick = "calculator.textField.value += '8'">
+<input type = "button" value = "9 " onclick = "calculator.textField.value += '9'">
+<input type = "button" value = "* " onclick = "calculator.textField.value += '*'">
+</div>
+<div>
+<input type = "button" value = "/ " onclick = "calculator.textField.value += '/'">
+<input type = "button" value = "0 " onclick = "calculator.textField.value += '0'">
+<input type = "button" value = ". " onclick = "calculator.textField.value += '.'">
+<input type = "button" value = "= " onclick = "calculator.textField.value = eval(calculator.textField.value) " >
+</div>
+<div>
+<input type = "button" value = "CLEAR ALL " id = "clear" onclick = "calculator.textField.value = ''">
+
+</div>
+</div>
+</form>
+</body>
+
+
+
+</html>
